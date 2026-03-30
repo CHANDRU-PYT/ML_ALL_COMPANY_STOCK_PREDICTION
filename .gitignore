@@ -151,7 +151,5 @@ Thumbs.db
 
 # Project specific
 fastapi_log.txt
-model.pkl
-pipeline.pkl
 All_Companyreport.csv
 Downloads/

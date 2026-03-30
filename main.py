@@ -14,10 +14,9 @@ import pandas as pd
 import pickle, os, datetime
 
 # ══════════════════════════════════════════════════════════════
-#  STEP 1 ► SET YOUR MYSQL PASSWORD HERE (only line you change)
+#  STEP 1 ► CONFIGURATION (reads from .env by default)
 # ══════════════════════════════════════════════════════════════
-MYSQL_PASSWORD = "Chandru@1234"         # ← PUT YOUR MySQL Workbench PASSWORD HERE
-#                                  (leave as "" if you have no password)
+MYSQL_PASSWORD = os.getenv("MYSQL_PASSWORD", "") 
 # ══════════════════════════════════════════════════════════════
 
 # ── Optional: override via .env file ──────────────────────────────────────────
